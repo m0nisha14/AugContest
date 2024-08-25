@@ -1,0 +1,286 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.navbar {
+    background-color: #333;
+    padding: 20px 40px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    border-radius: 8px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 40px;
+}
+
+.navbar .nav-links li {
+    margin: 0;
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Custom Raleway font classes */
+.raleway-header {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600; /* Customize this value as needed */
+}
+
+.raleway-body {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400; /* Customize this value as needed */
+}
+
+.raleway-footer {
+    font-family: "Raleway", sans-serif;
+    font-weight: 300; /* Customize this value as needed */
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding: 100px 20px;
+    width: 80%;
+}
+
+.text-content {
+    max-width: 50%;
+    margin-right: 30px;
+}
+
+.text-content h1 {
+    font-size: 44px;
+    margin-bottom: 20px;
+}
+
+.text-content p {
+    font-size: 18px; /* Adjust size as needed */
+    margin-bottom: 20px;
+    color: #9C9C9C; /* Text color */
+}
+
+.cta-button {
+    background-color: #3F8E00;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(40, 167, 69, 0.5);
+    transition: box-shadow 0.3s ease;
+}
+
+.cta-button:hover {
+    box-shadow: 0 0 20px rgba(40, 167, 69, 0.8);
+}
+
+.image-content img {
+    max-width: 400px; /* Increase the max width for a larger image */
+    height: auto;
+    margin: 0 50px; /* Adjust margin for spacing */
+    border-radius: 10px;
+}
+
+.footer {
+    text-align: center;
+    padding: 30px;
+    margin-top: -50px;
+    font-size: 20px;
+}
+
+.footer-content {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.footer img {
+    margin: 0 40px;
+    vertical-align: middle;
+    height: auto;
+    width: 100px; /* Set the size of the footer images */
+}
+
+p {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 400; /* Adjust weight as needed */
+    font-size: 18px; /* Adjust size as needed */
+    line-height: 1.5; /* Adjust line height as needed */
+    margin-bottom: 20px;
+    color: #9C9C9C;
+}
+
+.about-section {
+    width: 100%; /* Full width */
+    background-color: #ffffff; /* White background color */
+    padding: 50px 0; /* Vertical padding */
+    color: #333; /* Text color */
+    text-align: center; /* Center-aligns the text */
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+/* Header styling within the About section */
+.about-section h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #000; /* Dark text color for header */
+}
+
+/* Paragraph styling within the About section */
+.about-section .raleway-body {
+    text-align: center;
+    margin: 40px 100px;
+}
+
+/* Ensures expertise section is centered and aligned */
+.expertise-section {
+    display: flex;
+    flex-direction: row; /* Aligns the content side-by-side */
+    align-items: flex-start; /* Aligns items to the start of the flex container */
+    justify-content: space-between; /* Distributes space between items */
+    margin: 0 100px;
+    max-width: 1200px;
+    background-color: #ffffff; /* Ensure white background */
+    padding: 20px; /* Add some padding */
+    border-radius: 8px; /* Optional: rounded corners */
+}
+/* Paragraph styling within the expertise section */
+.expertise-text {
+    max-width: 80%; /* Optional: limits the width of the text block */
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: left;
+}
+
+.expertise-text h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #000; /* Dark text color for subheader */
+}
+
+/* Expertise image styling */
+.expertise-image img {
+    max-width: 300px;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Specific styles for Expertise 2 */
+.expertise-section.expertise-2 {
+    flex-direction: row; /* Ensure row layout */
+    justify-content: flex-end; /* Push the content to the right side */
+}
+
+/* Margin adjustments for reversed layout */
+.expertise-section.expertise-2 .expertise-text {
+    margin-right: 0; /* No margin on the right side in reversed layout */
+    margin-left: 20px; /* Margin on the left side for spacing */
+    text-align: right; /* Align text to the right */
+}
+
+/* Ensure image is on the left side of the screen */
+.expertise-section.expertise-2 .expertise-image {
+    margin-left: 0; /* No margin on the left side */
+    margin-right: 20px; /* Margin on the right side for spacing */
+    order: -1; /* Ensure the image is placed before text */
+    align-self: flex-start; /* Align image to the top */
+}
+
+/* White background for Expertise 3 */
+.footer-final {
+    background-color: black;
+    padding: 40px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.footer-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.form-input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 200px;
+    display: block;
+}
+
+.form-textarea {
+    padding: 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 440px;
+    resize: none; /* Prevent resizing */
+}
+
+.form-submit {
+    background-color: #3F8E00;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-submit:hover {
+    background-color: #2f6b00;
+}
+
+.fin p{
+    justify-content: center;
+    align-items: center;
+    margin:50px 100px;
+}
+
+
+
